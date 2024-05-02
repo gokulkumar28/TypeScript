@@ -1,0 +1,26 @@
+.header
+{
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+#show-login{
+    text-align: center;
+    display: block;
+}
+#signin-page
+{
+    display: none;
+}
+#signup-page
+{
+    display: none;
+}
+#inside
+{
+    display: none;
+}
+#dataTable
+{
+display: none;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/JavaScript" src="index.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <span class="header-content">Online Medical Store</span>
+    </div>
+
+    <div id="show-login">
+        <button id="signup" onclick="Signup()">Signup</button>
+        <button id="signin" onclick="signin()">Signin</button>
+    </div>
+
+    <div id="signup-page">
+        <label>Emaill</label><br>
+        <input id="email" type="email" name="email" onclick="CheckEmailValidation()"><br>
+        <lebel>password</lebel><br>
+        <input id="password" type="password" name="password"><br>
+        <label>confirm password</label><br>
+        <input id="confirm-password" type="password" name="confirm-password" onclick="CheckPassswordValidation()"><br>
+        <label>Mobile number</label><br>
+        <input id="mobile-number" type="number"><br>
+        <button type="submit" onclick="inside()">Signup<p /button>
+    </div>
+
+    <div id="signin-page">
+        <label>Emaill</label><br>
+        <input id="email" type="email" name="email"><br>
+        <lebel>password</lebel><br>
+        <input id="password" type="password" name="password"><br>
+        <button type="submit" id="signin-btn">Signin</button>
+    </div>
+
+    <div id="inside">
+       
+            <button class="home">
+                Home
+            </button>
+            <button class="medicine-details" onclick="MedicineDetail()">
+                Medicine details
+            </button>
+            <button class="purchase">
+                Purchase
+            </button>
+            <button class="cancel">
+                Cancel
+            </button>
+            <button class="top-up">
+                Top Up
+            </button>
+            <button class="show-balance">
+                Show Balance
+            </button>
+            <button class="order-history">
+                Order History
+            </button>
+    </div>
+
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Medicine Id</th>
+                <th>Medicine Name</th>
+                <th>Medicine Count</th>
+                <th>Medicine Price</th>
+            </tr>   
+        </thead>
+        <tbody id="rows">
+            <!-- Table data will be inserted here -->
+        </tbody>
+    </table>
+</body>
+
+</html>
